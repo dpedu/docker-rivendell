@@ -1,0 +1,2 @@
+deb http://debian.tryphon.eu trusty main contrib
+deb-src http://debian.tryphon.eu trusty main contrib
