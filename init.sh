@@ -23,6 +23,9 @@ fi
 
 rdadmin --check-db
 
+# Apache is trouble
+/etc/init.d/apache2 restart
+
 sleep 5
 
 # Start gui apps
