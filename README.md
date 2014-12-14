@@ -21,7 +21,7 @@ After using the exact commands above, `docker ps` will show you what ports on th
 Known Issues
 ============
 
-* Clicking 'Add' on the rdairplay window created by default causes the window to close. After bringing up another window (through xterm), the button functions normally.
+* Clicking 'Add' on the rdairplay window created by default causes the window to close. After bringing up another window (through xterm), the button functions normally. This *should* be fixed
 * Apache occasionally needs a manual restart after the container is started. This *should* be fixed
 
 Thanks to:

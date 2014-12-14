@@ -30,7 +30,7 @@ sleep 5
 
 # Start gui apps
 
-su -c "DISPLAY=:0 rdairplay &" rduser
+su -c "cd /home/rduser; DISPLAY=:0 rdairplay &" rduser
 su -c "DISPLAY=:0 jamin &" rduser
 
 sleep 10
