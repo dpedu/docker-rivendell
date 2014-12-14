@@ -34,7 +34,7 @@
 
         <!-- Admin logs in with the username given below -->
         <admin-user>admin</admin-user>
-        <admin-password>admin</admin-password>
+        <admin-password>rduser</admin-password>
     </authentication>
 
     <!-- set the mountpoint for a shoutcast source to use, the default if not
