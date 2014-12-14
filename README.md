@@ -5,7 +5,7 @@ Rivendell & Docker
 
 * Install docker
 * Clone this repo; cd into it
-* Create an image in Docker: `docker build -t rivendell .`
+* Create an image in Docker: `docker build -t rivendell .` (this step takes about 20 minutes)
 * Start a new container using the image: `docker run -d -p 5900 -p 8000 -p 22 rivendell`
 
 **Access:**
