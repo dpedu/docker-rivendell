@@ -52,6 +52,7 @@ RUN apt-get update ; \
 
 COPY rd.conf /etc/rd.conf
 COPY init.sh /home/rduser/init.sh
+RUN chmod +x /home/rduser/init.sh
 
 
 # Install Alsa (is this necessary?)
