@@ -23,6 +23,8 @@ fi
 
 rdadmin --check-db
 
+sleep 5
+
 # Start gui apps
 
 su -c "DISPLAY=:0 rdairplay &" rduser
