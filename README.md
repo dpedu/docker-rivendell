@@ -24,12 +24,14 @@ Known Issues
 * Clicking 'Add' on the rdairplay window created by default causes the window to close. After bringing up another window (through xterm), the button functions normally.
 * Apache occasionally needs a manual restart after the container is started. This *should* be fixed
 
-Included packages
-=================
+Thanks to:
+==========
 
 * Rivendell - http://www.rivendellaudio.org/
 * Jackd - http://jackaudio.org/
 * Edcast for jackd - (and older version of) https://code.google.com/p/edcast-reborn/
 * Icecast - http://icecast.org/
 * Jamin - http://jamin.sourceforge.net/
-* MySQL
+* Tryphon Debian Repository - http://debian.tryphon.eu/
+* MySQL - http://www.mysql.com/
+* Ubuntu - http://www.ubuntu.com/
