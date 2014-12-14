@@ -1,3 +1,14 @@
 #!/bin/bash
 
+# Clear any stranded lock files
+rm -rf /tmp/.X*
+rm -f /home/rduser/.rdairplaylock
+
+# start vnc
+su -c "vncserver -geometry 1280x800 :0" rduser
+
+# Rivendel init
+/home/rduser/init.sh &
+
+# start services
 supervisord

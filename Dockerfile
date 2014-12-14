@@ -22,6 +22,7 @@ RUN tar zxvf /tmp/edcast-jack-3.1.7.tar.gz ; \
     cd edcast-jack-3.1.7/ ; ./configure ; \
     cd edcast-jack-3.1.7/ ; make ; \
     cd edcast-jack-3.1.7/ ; make install
+COPY edcast.cfg /home/rduser/edcast.cfg
 
 
 # Configure icecast
@@ -50,6 +51,7 @@ RUN apt-get update ; \
     apt-get -y install rivendell rivendell-server rivendell-doc mysql-server jack-rack jamin jackd qjackctl
 
 COPY rd.conf /etc/rd.conf
+COPY init.sh /home/rduser/init.sh
 
 
 # Install Alsa (is this necessary?)
@@ -85,22 +87,3 @@ EXPOSE 8000
 
 # Set boot command
 CMD /start
-
-
-
-
-
-vncserver -geometry 1280x800 :0
-
-
-
-
-
-
-
-
-#docker build -t rivendell2 .
-
-
-# TODO: cleanup extra packages like g++, make, etc
-
