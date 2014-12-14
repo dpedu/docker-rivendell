@@ -1,1 +1,6 @@
-TODO: Write readme
+* Install docker
+* Clone this repo
+* Create an image using this dockerfile: `docker build -t rivendell .`
+* Start a new container from the image: `docker run -d -p 5900 -p 8000 -p 22 rivendell`
+
+TODO: Write more readme
