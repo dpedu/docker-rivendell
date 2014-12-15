@@ -39,8 +39,6 @@ Thanks to:
 Upcoming Roadmap
 ================
 
-(Besides bug fixes, of course)
-
 * Autoplay RDAirOlay on boot
 * Set up an audio file [dropbox](http://rivendell.tryphon.org/wiki/Dropboxes)
 * Include basic log generation rules by default
