@@ -50,6 +50,7 @@ RUN apt-get update ; \
     echo "rivendell-server rivendell-server/debconfenable boolean false" | debconf-set-selections ; \
     apt-get -y install rivendell rivendell-server rivendell-doc mysql-server jack-rack jamin jackd qjackctl
 COPY rdmysql.conf /etc/mysql/conf.d/rdmysql.cnf
+COPY rd.icecast.conf /etc/rd.icecast.conf
 
 COPY rd.conf /etc/rd.conf
 COPY init.sh /home/rduser/init.sh
