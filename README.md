@@ -39,7 +39,7 @@ Thanks to:
 Upcoming Roadmap
 ================
 
-* Autoplay RDAirOlay on boot
+* Autoplay RDAirplay on boot
 * Set up an audio file [dropbox](http://rivendell.tryphon.org/wiki/Dropboxes)
 * Include basic log generation rules by default
 * On first boot, if input data is available, import dropbox'd music and generate a basic log using it
