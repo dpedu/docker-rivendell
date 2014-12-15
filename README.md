@@ -25,7 +25,7 @@ Creates and installs a Rivendell server, with the barebones software components 
 
 * **SSH:** a ssh server runs to allow easy remote access to inspect the docker container's internals
 
-* **Icecast:** a stream (named simply "stream") is made available. It's silence until RDAirplay pushes audio to it.
+* **Icecast:** a stream (named simply "stream") is made available. It's silent until RDAirplay pushes audio to it.
 
 * **VNC:** a VNC session providing minimal desktop functionality is started
 
@@ -57,6 +57,7 @@ Thanks to:
 Upcoming Roadmap
 ================
 
+* Customize (or use a different) window manager. (XFCE?)
 * Autoplay RDAirplay on boot
 * Set up an audio file [dropbox](http://rivendell.tryphon.org/wiki/Dropboxes)
 * Include basic log generation rules by default
