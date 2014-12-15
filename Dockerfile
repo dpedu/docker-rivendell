@@ -48,7 +48,7 @@ RUN apt-get update ; \
     echo "mysql-server-5.5 mysql-server/root_password_again password root" | debconf-set-selections ; \
     echo "mysql-server-5.5 mysql-server/root_password password root" | debconf-set-selections ; \
     echo "rivendell-server rivendell-server/debconfenable boolean false" | debconf-set-selections ; \
-    apt-get -y install rivendell rivendell-server rivendell-doc mysql-server jack-rack jamin jackd qjackctl
+    apt-get -y install rivendell rivendell-server rivendell-doc mysql-server jack-rack jamin jackd qjackctl curl
 COPY rdmysql.conf /etc/mysql/conf.d/rdmysql.cnf
 COPY rd.icecast.conf /etc/rd.icecast.conf
 
