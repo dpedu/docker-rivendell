@@ -35,3 +35,14 @@ Thanks to:
 * Tryphon Debian Repository - http://debian.tryphon.eu/
 * MySQL - http://www.mysql.com/
 * Ubuntu - http://www.ubuntu.com/
+
+Upcoming Roadmap
+================
+
+(Besides bug fixes, of course)
+
+* Autoplay RDAirOlay on boot
+* Set up an audio file [dropbox](http://rivendell.tryphon.org/wiki/Dropboxes)
+* Include basic log generation rules by default
+* On first boot, if input data is available, import dropbox'd music and generate a basic log using it
+* On first boot, if input data is available, automatically load the log into RDAirplay 
