@@ -21,7 +21,7 @@ After using the exact commands above, `docker ps` will show you what ports on th
 What it does by default
 =======================
 
-Creates and installs a Rivendell server, with the barebones software components to play audio and how a full Rivendell stack would behave.
+Creates and installs a Rivendell server, with the barebones software components to play audio and see how a full Rivendell stack would behave.
 
 * **SSH:** a ssh server runs to allow easy remote access to inspect the docker container's internals
 
