@@ -19,6 +19,8 @@ if [ $DBS -eq 0 ] ; then
     chown -R rduser /var/snd
     # Create default database
     DISPLAY=:0 rdadmin --check-db --mysql-admin-user=root --mysql-admin-password=root --mysql-admin-hostname=127.0.0.1 --mysql-admin-dbname=Rivendell
+    # Enable icecast plugin
+    echo "INSERT INTO NOWNEXT_PLUGINS VALUES (1,'`hostname`',0,'/usr/lib/rivendell/rlm_icecast2.rlm','/etc/rd.icecast.conf');" | mysql -u root -proot Rivendell
 fi
 
 rdadmin --check-db
