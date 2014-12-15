@@ -18,6 +18,23 @@ After using the exact commands above, `docker ps` will show you what ports on th
 
 **Icecast** *- exposed on port 8000:* Admin panel is username **admin** password **rduser**. (No authorization needed to simply view streams.)
 
+What it does by default
+=======================
+
+Creates and installs a Rivendell server, with the barebones software components to play audio and how a full Rivendell stack would behave.
+
+* **SSH:** a ssh server runs to allow easy remote access to inspect the docker container's internals
+
+* **Icecast:** a stream (named simply "stream") is made available. It's silence until RDAirplay pushes audio to it.
+
+* **VNC:** a VNC session providing minimal desktop functionality is started
+
+* **JACKD:** runs invisibly behind the scenes
+
+* **Rivendell:** a RDAirplay window is brought up by default
+
+To "hear" the system working, all a user needs to do is press Add in RDAirplay, select an audio file, and press Start.
+
 Known Issues
 ============
 
@@ -35,6 +52,7 @@ Thanks to:
 * Tryphon Debian Repository - http://debian.tryphon.eu/
 * MySQL - http://www.mysql.com/
 * Ubuntu - http://www.ubuntu.com/
+* IceWM - http://www.icewm.org/
 
 Upcoming Roadmap
 ================
