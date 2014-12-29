@@ -76,8 +76,13 @@ RUN mkdir /var/run/sshd ; \
     apt-get -y install openssh-server
 
 
-# Install supervisor & start script
-RUN apt-get -y install supervisor
+# Install supervisor, vnstat, & start script
+# Configure vnstat to always use bytes instead of bits to display statistics
+RUN apt-get -y install supervisor vnstat ; \
+    chown -R rduser /var/lib/vnstat ; \
+    chgrp -R rduser /var/lib/vnstat ; \
+    sed -i -e"s/^UnitMode\s0/UnitMode 1/" /etc/vnstat.conf ; \
+    sed -i -e"s/^RateUnit\s1/RateUnit 0/" /etc/vnstat.conf
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY start /start
 RUN chmod +x /start
