@@ -4,7 +4,7 @@ MAINTAINER Dave P
 
 # Create rduser (password is rduser)
 RUN useradd --create-home --groups sudo,audio rduser ; \
-    echo "rduser:rduser" | chpasswd ;
+    echo "rduser:rduser" | chpasswd ; \
     locale-gen en
 
 
